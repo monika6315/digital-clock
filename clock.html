@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main{
+            margin: auto;
+            width: 250px;
+            height: 300px;
+            border: 3px solid gray;
+            background-color: black;
+            border: solid grey 3px;
+            border-radius: 5%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1{  color:white;
+            display: flex;
+        }
+
+        h4 {
+            color: antiquewhite;
+        }
+        h5 {
+            color: antiquewhite;
+        }
+        /* .btn{
+            position: relative;
+            margin-top: 100px;
+
+
+        
+        } */
+    </style>
+</head>
+<body>
+    <script>
+        setInterval(()=>{
+
+          let  date= new Date().toLocaleTimeString()
+            document.querySelector(".time").innerHTML=date
+        },1000);
+
+        const clickHandle =() =>{
+
+           
+            
+            
+            let arry=["sunday", "monday","tuesdy", "wednesday","thursday", "friday","sturday"]
+            let date= new Date().toLocaleDateString()
+            let day= new Date(). getDay()
+            document.querySelector(".day").innerHTML=arry[day]
+            document.querySelector(".date").innerHTML=date
+         
+
+
+
+        }
+
+
+        let wall=[Image 
+    
+    
+    ];
+
+      
+        document.body.style.backgroundImage=wall[day];
+
+      
+
+    </script>
+
+    <div class="main">
+
+    <h1 class="time"></h1>
+
+    <h4 class="day"></h4>
+    <h5 class="date"></h5>
+
+
+    <button onclick="clickHandle()"  class="btn"> day & date</button>
+</div>
+</body>
+</html>
